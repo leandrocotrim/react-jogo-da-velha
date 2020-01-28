@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.tabuleiro {
+    display       : flex;
+    flex-direction: column;
+    margin        : 100px
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.linha {
+    display       : flex;
+    flex-direction: row;
+}
+
+.casa {
+    display        : flex;
+    width          : 50px;
+    height         : 50px;
+    border         : gray 1px solid;
+    margin-top     : -1px;
+    margin-left    : -1px;
+    font-size      : 25px;
+    align-items    : center;
+    justify-content: center;
+    cursor         : pointer;
+}
+
+.no-drop {
+    cursor: no-drop;
+}
+
+.jogador-campeao,
+.jogador-atual {
+    padding-top: 15px;
 }
