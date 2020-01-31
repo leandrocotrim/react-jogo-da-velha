@@ -5,10 +5,10 @@ export const TipoJogador = {
 
 export function Random() {
     return Math.floor(Math.random() * 10) % 2 === 0
-        ? TipoJogador.X : TipoJogador.Y;
+        ? TipoJogador.X : TipoJogador.O;
 }
 
-export const Casas = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+export function Casas() { return [1, 2, 3, 4, 5, 6, 7, 8, 9]; }
 
 const trilhas = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],

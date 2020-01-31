@@ -1,32 +1,51 @@
 .tabuleiro {
-    display       : flex;
-    flex-direction: column;
-    margin        : 100px
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
 }
 
 .linha {
-    display       : flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .casa {
-    display        : flex;
-    width          : 50px;
-    height         : 50px;
-    border         : gray 1px solid;
-    margin-top     : -1px;
-    margin-left    : -1px;
-    font-size      : 25px;
-    align-items    : center;
-    justify-content: center;
-    cursor         : pointer;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border: gray 1px solid;
+  margin-top: -1px;
+  margin-left: -1px;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .no-drop {
-    cursor: no-drop;
+  cursor: no-drop;
+}
+
+.trilha {
+  background-color: red;
+  color: white;
 }
 
 .jogador-campeao,
 .jogador-atual {
-    padding-top: 15px;
+  padding-top: 15px;
+}
+
+.erro {
+  color: red;
+}
+
+.buttons {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.buttons > div {
+  padding-right: 30px;
 }

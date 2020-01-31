@@ -7,8 +7,12 @@ class Casa extends Component {
     }
 
     render() {
+        const className = 'casa ' +
+            (isNaN(this.props.casa) ? 'no-drop ' : '') +
+            (this.props.trilha.includes(this.props.index) ? 'trilha ' : '');
+
         return (
-            <div className={isNaN(this.props.casa) ? "casa no-drop" : "casa"} onClick={this.click}>
+            <div className={className} onClick={this.click}>
                 {this.props.casa}
             </div>
         )
