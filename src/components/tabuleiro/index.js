@@ -57,14 +57,13 @@ class Tabuleiro extends Component {
     }
 
     voltar = () => {
-        debugger
         let historico = this.state.historico.slice();
         if (historico.length > 1) {
             const casas = historico.splice(-1);
             this.setState({
                 casas: casas[0],
                 historico: historico,
-
+                jogadorAtual: this.proximoJogador(),
                 erro: false,
                 campeao: false,
                 trilha: [],
